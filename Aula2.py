@@ -1,17 +1,20 @@
 from pessoa import Pessoa
-from endereco import cadastrar_endereco
+from endereco import Endereco
 
 print ('--'*30)
 print ('--'*30)
 
-p1 = Pessoa ()
-print (p1.nome)
+pessoa = Pessoa()
+endereco = Endereco()
+print (pessoa.cadastrar_pessoa())
+print (endereco.cadastrar_endereco())
 
-print(p1.cadastrar_pessoa())
+
 print ('--'*30)
-#print(cadastrar_endereco())
-print (f'Nome na classe'))
+print(pessoa.nome)
+print(endereco.logradouro)
 print ('--'*30)
+
 
 
 #print (f'Nome: {nome}, sobrenome: {sobrenome}, data de nascimento: {data_nascimento}, e-mail {email} e  senha: {senha}.')

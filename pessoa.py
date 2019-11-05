@@ -1,10 +1,14 @@
 class Pessoa:
-    nome = 'pescador de rã'
+    nome = ''
+    sobrenome = ''
+    data_nascimento = ''
+    email = ''
+    senha = ''
     def cadastrar_pessoa(self):
-        nome = input ('Digite seu nome: ')
-        sobrenome = input('Digite seu sobrenome: ')
-        data_nascimento = input ('Digite a sua data de nascimento: ')
-        email = input ('Digite seu e-mail: ')
-        senha = input ('Digite sua senha: ')
-        return (f'Nome: {nome}, sobrenome: {sobrenome}, data de nascimento: {data_nascimento}, e-mail {email} e  senha: {senha}')
+        self.nome = input ('Digite seu nome: ')
+        self.sobrenome = input('Digite seu sobrenome: ')
+        self.data_nascimento = input ('Digite a sua data de nascimento: ')
+        self.email = input ('Digite seu e-mail: ')
+        self.senha = input ('Digite sua senha: ')
+        return (f'Nome: {self.nome}, sobrenome: {self.sobrenome}, data de nascimento: {self.data_nascimento}, e-mail {self.email} e  senha: {self.senha}')
         
