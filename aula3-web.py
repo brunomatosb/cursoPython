@@ -2,23 +2,11 @@ from flask import Flask,render_template
 from aluno import Aluno
 from avaliacao import Avaliacao
 
-aluno1 = Aluno()
-aluno1.nome = 'Bruno'
-aluno1.sobrenome = 'Bastos'
-aluno1.usuario = 'BB'
-aluno1.senha = '123'
-
+aluno1 = Aluno('Bruno','Bastos', 'BB', '123' )
 aluno2 = Aluno( 'Pedro','seila','PS','12345')
 
-avaliacao1 = Avaliacao ()
-avaliacao1.data = '19/04/1992'
-avaliacao1.avaliacao = 'matematica'
-avaliacao1.nota = 9
-
-avaliacao2 = Avaliacao ()
-avaliacao2.data = '08/09/1990'
-avaliacao2.avaliacao = 'portugues'
-avaliacao2.nota = 10
+avaliacao1 = Avaliacao ('14/04/1992', 'matematica', '10')
+avaliacao2 = Avaliacao ('08/09/1990', 'portugues', '08')
 
 
 app = Flask(__name__)

@@ -1,4 +1,5 @@
 class Avaliacao:
-    data = ''
-    avaliacao = ''
-    nota = 0
+    def __init__ (self,data,avaliacao,nota):
+        self.data = data
+        self.avaliacao = avaliacao
+        self.nota = nota
